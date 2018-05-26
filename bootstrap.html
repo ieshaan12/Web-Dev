@@ -87,4 +87,65 @@ Delete the .red-text, p, and .smaller-image CSS declarations from your style ele
 Then delete the p element that contains a dead link. Then remove the red-text class from your h2 element and replace it with the text-primary Bootstrap class.
 
 Finally, remove the "smaller-image" class from your first img element and replace it with the img-responsive class.
+You can use spans to create inline elements. Remember when we used the btn-block class to make the button fill the entire row?
+
+This image illustrates the difference between inline elements and block-level elements:
+https://i.imgur.com/O32cDWE.png
+By using the span element, you can put several elements together, and even style different parts of the same element differently.
+
+Nest the word "love" in your "Things cats love" element below within a span element. Then give that span the class text-danger to make the text red.
+
+Here's how you would do this with the "Top 3 things cats hate" element:
+
+<p>Top 3 things cats <span class = "text-danger">hate:</span></p>
+Create a Custom Heading
+We will make a simple heading for our Cat Photo App by putting the title and relaxing cat image in the same row.
+
+Remember, Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
+
+Here's a diagram of how Bootstrap's 12-column grid layout works:
+https://i.imgur.com/FaYuui8.png
+Note that in this illustration, the col-md-* class is being used. Here, md means medium, and * is a number specifying how many columns wide the element should be. In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.
+
+In the Cat Photo App that we're building, we'll use col-xs-*, where xs means extra small (like an extra-small mobile phone screen), and * is the number of columns specifying how many columns wide the element should be.
+
+Nest your first image and your h2 element within a single <div class="row"> element. Nest your h2 element within a <div class="col-xs-8"> and your image in a <div class="col-xs-4"> so that they are on the same line.
+
+Notice how the image is now just the right size to fit along the text?
+Add Font Awesome Icons to our Buttons
+Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the .svg file format. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+
+You can add Font Awesome to any app just by including it by adding the following code to the top of your HTML:
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+In this case, we've already added it for you to this page behind the scenes.
+
+The i element was originally used to make other elements italic, but is now commonly used for icons. You add the Font Awesome classes to the i element to turn it into an icon, for example:
+
+<i class="fa fa-info-circle"></i>
+
+Use Font Awesome to add a thumbs-up icon to your like button by giving it an i element with the classes fa and fa-thumbs-up.
+Add Font Awesome Icons to all of our Buttons
+Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the .svg file format. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+
+Use Font Awesome to add an info-circle icon to your info button and a trash icon to your delete button.
+Responsively Style Radio Buttons
+You can use Bootstrap's col-xs-* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
+
+Nest all of your radio buttons within a <div class="row"> element. Then nest each of them within a <div class="col-xs-6"> element.
+Responsively Style Checkboxes
+You can use Bootstrap's col-xs-* classes on form elements, too! This way, our checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
+
+Nest all your checkboxes in a <div class="row"> element. Then nest each of them in a <div class="col-xs-4"> element.
+Style Text Inputs as Form Controls
+You can add the fa-paper-plane Font Awesome icon by adding <i class="fa fa-paper-plane"></i> within your submit button element.
+
+Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
+Line up Form Elements Responsively with Bootstrap
+Now let's get your form input and your submission button on the same line. We'll do this the same way we have previously: by using a div element with the class row, and other div elements within it using the col-xs-* class.
+
+Nest both your form's text input and submit button within a div with the class row. Nest your form's text input within a div with the class of col-xs-7. Nest your form's submit button in a div with the class col-xs-5.
+
+This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
 -->
